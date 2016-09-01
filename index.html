@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Pluggedin</title>
+  <meta name="description" content="Pluggedin">
+  <meta name="author" content="Dimon Zaverukha">
+
+  <link rel="stylesheet" href="dest/css/style.css?v=2.0">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="brand">
+        <img src="Content/images/logo.png" />
+        <div class="brand-slogan">
+          Inform. Connect. Inspire.
+        </div>
+      </div>
+      <div class="right-nav">
+        <div class="nav-first-line">
+          <a href="">Über uns</a>
+          <a href="">Redaktion</a>
+          <div class="lang">
+            <button type="button">DE</button>
+            <button type="button">EN</button>
+          </div>
+        </div>
+        <button class="search">
+          <img src="Content/images/serach-icon.png" />
+        </button>
+        <div class="nav-bar">
+          <nav>
+            <a href="">DESIGN+LIFESTYLE</a>
+            <a href="">TRENDS</a>
+            <a href="">INFODELIGHT</a>
+            <a href="">SMART LIVING</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="first-block">
+        <div>|  Design+Lifestyle  |  Smart Living  |</div>
+        <div>Was hilft mir, Energie zu sparen und Spaß zu haben, bei mir zu Hause?</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut  dolor in reprehenderit in quia...</div>
+        <div class="slider">
+          <input type="radio" name="sliderControl" id="ctrl1" checked="checked" /><label for="ctrl1"></label>
+          <input type="radio" name="sliderControl" id="ctrl2" /><label for="ctrl2"></label>
+          <input type="radio" name="sliderControl" id="ctrl3" /><label for="ctrl3"></label>
+          <input type="radio" name="sliderControl" id="ctrl4" /><label for="ctrl4"></label>
+          <input type="radio" name="sliderControl" id="ctrl5" /><label for="ctrl5"></label>
+          <input type="radio" name="sliderControl" id="ctrl6" /><label for="ctrl6"></label>
+        </div>
+      </div>
+      <div class="second-block">
+        <div>A place called Inspiration.</div>
+        <div>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam voluptatem.</div>
+        <div class="dropdown-toggle">
+          <button type="button">{{choosenType}}</button>
+          <ul class="dropdown">
+            <li v-for="type in types" v-on:click="chooseType($index)">
+              {{type.name}}
+            </li>
+          </ul>
+        </div>
+        <div><button type="button" v-on:click="insertChart()">Insert</button></div>
+      </div>
+      <div class="third-block">
+        <div>|  Design+Lifestyle  |  Smart Living  |</div>
+        <div>Was hilft mir, Energie zu sparen und Spaß zu haben, bei mir zu Hause?</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut  dolor in reprehenderit in quia...</div>
+      </div>
+      <div class="fourth-block">
+        <div>|  Design+Lifestyle  |  Smart Living  |</div>
+        <div>Was hilft mir, Energie zu sparen und Spaß zu haben, bei mir zu Hause?</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut  dolor in reprehenderit in quia...</div>
+      </div>
+      <div class="chart">
+        <div v-for="chart in charts">
+          <chart :type="chart.type" :data-set="chart.data"></chart>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="dest/js/bundle.js"></script>
+</body>
+</html>

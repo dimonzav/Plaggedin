@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "Verdana Regular";
+  src: url("../../Content/fonts/Verdana.ttf") format("truetype"); }
+
+body {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0; }
+
+html {
+  height: 100%;
+  width: 100%; }
+
+header {
+  height: 118px;
+  border: 1px solid #d9d9d9; }
+
+header .brand {
+  display: inline-block; }
+  header .brand img {
+    width: 160px;
+    height: 23px;
+    margin: 53px 0 13px 35px; }
+  header .brand .brand-slogan {
+    margin: 0 0 22px 35px;
+    font-size: 14px;
+    word-spacing: 10px; }
+
+header .right-nav {
+  float: right;
+  margin: 20px 35px 20px 0; }
+  header .right-nav .nav-first-line {
+    float: right;
+    margin-bottom: 35px;
+    margin-left: -60px; }
+    header .right-nav .nav-first-line nav {
+      display: block;
+      margin-left: -60px; }
+  header .right-nav .nav-bar {
+    clear: both; }
+    header .right-nav .nav-bar nav {
+      margin-top: -23px; }
+      header .right-nav .nav-bar nav a {
+        display: inline-block;
+        height: 17px;
+        padding: 0 25px;
+        border-left: 2px solid #333333;
+        font-size: 16px; }
+      header .right-nav .nav-bar nav a:last-child {
+        padding-right: 0px; }
+  header .right-nav .search {
+    margin-left: -60px;
+    margin-top: 53px;
+    border: none;
+    background-color: inherit;
+    cursor: pointer; }
+  header .right-nav .nav-first-line a {
+    display: inline-block;
+    width: 72px;
+    height: 15px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none; }
+  header .right-nav .nav-first-line a:hover {
+    border: 1px solid #999999; }
+  header .right-nav .nav-first-line .lang {
+    float: right; }
+    header .right-nav .nav-first-line .lang button {
+      width: 30px;
+      height: 23px;
+      border: 1px solid;
+      cursor: pointer;
+      background-color: inherit; }
+    header .right-nav .nav-first-line .lang button:first-child {
+      margin-left: 5px; }
+    header .right-nav .nav-first-line .lang button:last-child {
+      margin-left: -3px; }
+
+.lang-button-choose {
+  border: 1px solid #d2d2d2;
+  color: #d7d7d7;
+  background: #f5f5f5; }
+
+.wrapper .content {
+  width: 100%;
+  height: 800px; }
+  .wrapper .content .first-block, .wrapper .content .second-block, .wrapper .content .third-block, .wrapper .content .fourth-block {
+    height: 50%; }
+  .wrapper .content .first-block {
+    float: left;
+    width: 75%;
+    background: url("../../Content/images/first_block.png") no-repeat;
+    background-size: cover;
+    margin-right: 2px; }
+    .wrapper .content .first-block .slider {
+      position: relative;
+      top: 80px;
+      width: 100%;
+      overflow: hidden; }
+      .wrapper .content .first-block .slider input[type=radio] {
+        visibility: hidden;
+        position: absolute; }
+      .wrapper .content .first-block .slider input[type=radio], .wrapper .content .first-block .slider label {
+        position: relative;
+        top: 2px;
+        left: -2%; }
+      .wrapper .content .first-block .slider input[type=radio] + label {
+        cursor: pointer; }
+      .wrapper .content .first-block .slider input[type=radio] + label:before {
+        height: 4px;
+        width: 4px;
+        margin-right: 3px;
+        content: " ";
+        display: inline-block;
+        transition: 0.3s;
+        background-color: #8f9291; }
+      .wrapper .content .first-block .slider input[type=radio]:checked + label:before {
+        background-color: #fff; }
+  .wrapper .content .second-block {
+    float: right;
+    width: 298px;
+    background: #323232; }
+    .wrapper .content .second-block div {
+      margin-left: 34px;
+      color: #fff; }
+    .wrapper .content .second-block div:first-child {
+      width: 160px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      font-size: 24px; }
+    .wrapper .content .second-block div:nth-child(2) {
+      width: 225px;
+      line-height: 20px;
+      margin-bottom: 33px; }
+    .wrapper .content .second-block div:nth-child(3) button, .wrapper .content .second-block div:nth-child(4) button {
+      width: 152px;
+      height: 34px;
+      color: #fff;
+      background-color: inherit;
+      border: 1px solid #fff;
+      margin-bottom: 10px;
+      cursor: pointer; }
+  .wrapper .content .third-block {
+    float: left;
+    width: 50%;
+    background: url("../../Content/images/second_block.png") no-repeat;
+    background-size: cover;
+    margin-top: 2px;
+    margin-right: 2px; }
+  .wrapper .content .fourth-block {
+    float: right;
+    width: 598px;
+    background: url("../../Content/images/third_block.png") no-repeat;
+    background-size: cover;
+    margin-top: 2px; }
+  .wrapper .content .chart div {
+    float: left; }
+
+.first-block div, .third-block div, .fourth-block div {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-size: 14px; }
+
+.first-block div:first-child, .third-block div:first-child, .fourth-block div:first-child {
+  margin-top: 116px; }
+
+.first-block div:nth-child(2), .third-block div:nth-child(2), .fourth-block div:nth-child(2) {
+  width: 415px;
+  margin-top: 37px;
+  margin-bottom: 40px;
+  font-size: 24px; }
+
+.first-block div:last-child, .third-block div:last-child, .fourth-block div:last-child {
+  width: 450px;
+  font-family: "Verdana Regular"; }
+
+@media screen and (max-width: 1200px) {
+  .wrapper .content .first-block, .wrapper .content .second-block, .wrapper .content .third-block, .wrapper .content .fourth-block {
+    width: 49.9%; }
+  .wrapper .content .second-block div {
+    margin-left: 40%; } }
+
+@media screen and (max-width: 992px) {
+  .wrapper .content .first-block, .wrapper .content .second-block, .wrapper .content .third-block, .wrapper .content .fourth-block {
+    width: 100%; } }
+
+.dropdown-toggle {
+  position: relative;
+  display: inline-block; }
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 18px;
+  color: #323232;
+  background-color: #f9f9f9;
+  min-width: 152px;
+  padding: 0;
+  list-style-type: none; }
+  .dropdown li {
+    padding: 5px 30px;
+    cursor: pointer; }
+  .dropdown li:hover {
+    color: #fff;
+    background: #595959; }
+
+.dropdown-toggle:hover .dropdown {
+  display: block; }

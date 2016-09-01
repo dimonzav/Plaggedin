@@ -1,0 +1,24 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "ThechFunder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dimon Zaverukha",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "latest",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^2.3.2",
+    "jquery": "^3.1.0",
+    "vue": "^1.0.26"
+  },
+  "dependencies": {
+    "highcharts": "^4.2.6"
+  }
+}
