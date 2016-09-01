@@ -55,8 +55,9 @@ var chartTypes = new Vue({
     insertChart: function() {
       this.chartType = this.selected.type;
       this.chartData = this.selected.data;
-      this.showChart = true;
-      this.charts.push(this.selected);
+      if(this.charts.indexOf(this.selected) == -1) {
+        this.charts.push(this.selected);
+      }
     }
   }
 });
