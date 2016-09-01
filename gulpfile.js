@@ -2,7 +2,6 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     connect = require('gulp-connect'),
     browserify = require('gulp-browserify'),
-    stringify = require('stringify')
     concat = require('gulp-concat');
 
 gulp.task('connect', function() {

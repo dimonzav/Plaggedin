@@ -9,7 +9,6 @@
   "author": "Dimon Zaverukha",
   "license": "ISC",
   "devDependencies": {
-    "browserify": "latest",
     "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.0",
